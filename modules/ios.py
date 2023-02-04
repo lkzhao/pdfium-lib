@@ -152,7 +152,7 @@ def run_task_build():
             args.append("is_component_build=false")
             args.append("clang_use_chrome_plugins=false")
             args.append("pdf_is_standalone=false")
-            args.append('ios_deployment_target="11.0"')
+            args.append('ios_deployment_target="15.0"')
             args.append("ios_enable_code_signing=false")
             args.append("use_xcode_clang=true")
             args.append("pdf_is_complete_lib=true")
@@ -260,7 +260,7 @@ def run_task_install():
 
         # universal
         universal_libs = []
-        for env in ["simulator", "device"]:
+        for env in ["simulator", "device", "catalyst"]:
             folder = os.path.join("build", "ios", config, "lib", "*-{0}.a".format(env))
             files = glob.glob(folder)
             files_str = " ".join(files)

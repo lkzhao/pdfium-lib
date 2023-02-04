@@ -41,6 +41,18 @@ targets_ios = [
         "pdfium_os": "ios",
         "target_environment": "simulator",
     },
+    {
+        "target_os": "ios",
+        "target_cpu": "x64",
+        "pdfium_os": "ios",
+        "target_environment": "catalyst",
+    },
+    {
+        "target_os": "ios",
+        "target_cpu": "arm64",
+        "pdfium_os": "ios",
+        "target_environment": "catalyst",
+    },
 ]
 
 # android
